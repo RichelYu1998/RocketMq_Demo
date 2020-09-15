@@ -19,10 +19,10 @@ public class Consumer {
         c.setNamesrvAddr("192.168.64.141:9876");
         if (ts.equalsIgnoreCase("tag")) {
             System.out.println("使用Tag过滤: TagA || TagB || TagC");
-            c.subscribe("Topic7", "TagA || TagB || TagC");
+            c.subscribe("Topic6", "TagA || TagB || TagC");
         } else {
             System.out.println("使用Sql过滤: rnd=1 or rnd > 2");
-            c.subscribe("Topic7", MessageSelector.bySql("rnd=1 or rnd > 2"));
+            c.subscribe("Topic6", MessageSelector.bySql("rnd=1 or rnd > 2"));
         }
         c.registerMessageListener(new MessageListenerConcurrently() {
             @Override
