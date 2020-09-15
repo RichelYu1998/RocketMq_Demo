@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Consumer {
     public static void main(String[] args) throws Exception {
-        DefaultMQPushConsumer c = new DefaultMQPushConsumer("consumer-demo8");
+        DefaultMQPushConsumer c = new DefaultMQPushConsumer("consumer-demo7");
         c.setNamesrvAddr("192.168.64.141:9876");
         c.subscribe("Topic8", "*");
         c.registerMessageListener(new MessageListenerConcurrently() {

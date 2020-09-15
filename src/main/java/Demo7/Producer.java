@@ -13,7 +13,7 @@ import java.util.concurrent.Executors;
 
 public class Producer {
     public static void main(String[] args) throws Exception {
-        TransactionMQProducer p = new TransactionMQProducer("producer-demo8");
+        TransactionMQProducer p = new TransactionMQProducer("producer-demo7");
         p.setNamesrvAddr("192.168.64.141:9876");
         p.setExecutorService(Executors.newFixedThreadPool(5));
         p.setTransactionListener(new TransactionListener() {
