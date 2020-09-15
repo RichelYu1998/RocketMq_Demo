@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/demo2-springboot-rocketmq/pom.xml" />
       </list>
     </option>
   </component>

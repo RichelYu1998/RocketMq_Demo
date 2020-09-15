@@ -1,0 +1,3 @@
+rocketmq:
+  producer:
+    group: producer-demo2
